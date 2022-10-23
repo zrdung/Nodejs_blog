@@ -2,9 +2,10 @@
   "name": "courses",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resource/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +19,18 @@
   },
   "homepage": "https://github.com/zrdung/nodejs_courses#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.5",
+    "mongoose-delete": "^0.5.4"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
   }
 }
